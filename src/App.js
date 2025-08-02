@@ -1,25 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import Glossary from './pages/glosario';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Projects from './pages/projects';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="container py-4">
+        <h1 className="text-center mb-4">Portafolio de Tareas</h1>
+
+        {/* Menú de navegación */}
+        <ul className="nav nav-pills mb-4 justify-content-center">
+          <li className="nav-item">
+            <Link className="nav-link" to="/">Glosario</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/proyectos">Proyectos</Link>
+          </li>
+        </ul>
+
+        {/* Rutas de las secciones */}
+        <Routes>
+          <Route path="/" element={<Glossary />} />
+          <Route path="/proyectos" element={<Projects />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
 export default App;
+
+
