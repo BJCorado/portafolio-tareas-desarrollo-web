@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       {/* Menú fijo y moderno */}
-<Navbar className="floating-navbar" expand="lg">
+<Navbar className="floating-navbar" expand="lg" fixed="top">
   <Container>
     <Navbar.Brand className="fw-bold fs-4 text-white d-flex align-items-center gap-2">
       <FaBriefcase /> Portafolio De Tareas
@@ -32,7 +32,7 @@ function App() {
 </Navbar>
 
       {/* Contenido de rutas */}
-      <div className="container py-4">
+      <div className="container py-4 main-content">
         <Routes>
           <Route path="/tareas" element={<Tareas />} />
           <Route path="/proyectos" element={<Projects />} />

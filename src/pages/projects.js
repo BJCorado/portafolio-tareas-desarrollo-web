@@ -2,7 +2,7 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 function Projects() {
   return (
-    <div className="container">
+    <div className="container main-content">
       <h2 className="mb-4 text-center">Proyectos Web</h2>
 
       <div className="row">

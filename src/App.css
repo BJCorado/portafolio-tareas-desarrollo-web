@@ -1,3 +1,7 @@
+.main-content {
+  padding-top: 70px !important; /* Ajusta según la altura real del navbar */
+}
+
 .project-card {
   border-radius: 2rem;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
@@ -47,21 +51,15 @@
   color: white !important;
 }
 
-/* Estilos del navbar flotante */
+/* Navbar flotante con efecto vidrio */
 .floating-navbar {
-  position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(33, 37, 41, 0.35); /* más transparente para efecto vidrio */
-  padding: 0.5rem 1.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px); /* desenfoque para efecto vidrio */
-  -webkit-backdrop-filter: blur(10px); /* compatibilidad con Safari */
-  border: 1px solid rgba(255, 255, 255, 0.15); /* borde tenue */
-  z-index: 999;
-  width: auto;
+  background: rgba(33, 37, 41, 0.35); /* fondo oscuro translúcido */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 0 0 1rem 1rem; /* solo redondeo inferior */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1050; /* por encima del contenido */
 }
 
 .decorative-letter {
