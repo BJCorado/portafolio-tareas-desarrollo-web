@@ -1,12 +1,27 @@
 .project-card {
-  border-radius: 1rem;
+  border-radius: 2rem;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: levitate 3s ease-in-out infinite;
 }
 
+/* Efecto al pasar el mouse (aún más arriba y con más sombra) */
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
 }
+
+/* Animación de levitación */
+@keyframes levitate {
+  0%, 100% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
 
 /* Efecto base para todos los nav-link */
 .nav-link {
