@@ -1,8 +1,9 @@
 import './App.css';
-import Glossary from './pages/glosario';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Projects from './pages/projects';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
+import Tareas from './pages/tareas'; // antes era Glossary
+import Projects from './pages/projects';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         {/* Menú de navegación */}
         <ul className="nav nav-pills mb-4 justify-content-center">
           <li className="nav-item">
-            <Link className="nav-link" to="/">Glosario</Link>
+            <Link className="nav-link" to="/tareas">Tareas y Recursos</Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/proyectos">Proyectos</Link>
@@ -22,7 +23,7 @@ function App() {
 
         {/* Rutas de las secciones */}
         <Routes>
-          <Route path="/" element={<Glossary />} />
+          <Route path="/tareas" element={<Tareas />} />
           <Route path="/proyectos" element={<Projects />} />
         </Routes>
       </div>
@@ -31,5 +32,3 @@ function App() {
 }
 
 export default App;
-
-
