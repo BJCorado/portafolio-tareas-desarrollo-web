@@ -25,7 +25,7 @@ function App() {
 </Nav.Link>
 
 <Nav.Link as={NavLink} to="/proyectos">
-  <FaCode className="me-2" /> Proyectos
+  <FaCode className="me-2" /> Proyectos Web
 </Nav.Link>
     </Navbar.Collapse>
   </Container>
