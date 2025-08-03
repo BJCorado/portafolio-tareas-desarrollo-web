@@ -8,11 +8,41 @@
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
+/* Efecto base para todos los nav-link */
 .nav-link {
+  background-color: yellow;
+  color: white !important;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  margin: 0 0.5rem; /* Aumenta separación horizontal */
+  padding: 0.5rem 1rem;
   transition: all 0.3s ease;
 }
 
+/* Botón activo (ruta actual con NavLink) */
+.nav-link.active {
+  background-color: #ffc107 !important; /* amarillo */
+  color: white !important;
+}
+
+/* Hover: agranda, cambia fondo y texto */
 .nav-link:hover {
   transform: scale(1.1);
-  color: #ffc107 !important;
+  background-color: #ffc107 !important;
+  color: white !important;
 }
+
+/* Estilos del navbar flotante */
+.floating-navbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(33, 37, 41, 0.95); /* fondo tipo dark transparente */
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  width: auto;
+}
+
