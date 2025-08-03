@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       {/* Menú fijo y moderno */}
-<Navbar className="floating-navbar" expand="lg" fixed="top">
+<Navbar className="floating-navbar" expand="lg">
   <Container>
     <Navbar.Brand className="fw-bold fs-4 text-white d-flex align-items-center gap-2">
       <FaBriefcase /> Portafolio De Tareas

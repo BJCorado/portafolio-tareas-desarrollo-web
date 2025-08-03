@@ -53,13 +53,17 @@
 
 /* Navbar flotante con efecto vidrio */
 .floating-navbar {
+   top: 20px;
   background: rgba(33, 37, 41, 0.35); /* fondo oscuro translúcido */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-radius: 0 0 1rem 1rem; /* solo redondeo inferior */
+  border-radius: 1rem; /* redondeo completo en las 4 esquinas */ 
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   z-index: 1050; /* por encima del contenido */
+  width: calc(100% - 2rem); /* deja margen a los lados */
+  max-width: 960px; /* ancho máximo para que no se estire demasiado */
+  margin: 0 auto; /* centrado horizontal adicional */
 }
 
 .decorative-letter {
