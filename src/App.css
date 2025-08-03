@@ -83,4 +83,14 @@
   padding-left: 1rem;
 }
 
-
+.investigacion-texto {
+  white-space: pre-wrap;
+  text-align: justify;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Georgia', serif;
+  line-height: 1.8;
+  margin-top: 1rem;
+}
