@@ -43,6 +43,13 @@ function Glossary() {
     { term: "XML", definition: "eXtensible Markup Language. Lenguaje de marcado extensible que permite definir estructuras personalizadas de datos." },
   ];
 
+  const groupedGlossary = glossaryItems.reduce((acc, item) => {
+    const letter = item.term.charAt(0).toUpperCase();
+    if (!acc[letter]) acc[letter] = [];
+    acc[letter].push(item);
+    return acc;
+  }, {});
+
   return (
     <div>
       <button
@@ -54,9 +61,14 @@ function Glossary() {
 
       {showGlossary && (
         <div className="mt-3">
-          {glossaryItems.map((item, index) => (
-            <div key={index} className="mb-3">
-              <strong>{item.term}</strong>: {item.definition}
+          {Object.keys(groupedGlossary).sort().map((letter) => (
+            <div key={letter} className="mb-4">
+              <div className="decorative-letter">{letter}</div>
+              {groupedGlossary[letter].map((item, index) => (
+                <div key={index} className="mb-2 glossary-item">
+                  <strong>{item.term}</strong>: {item.definition}
+                </div>
+              ))}
             </div>
           ))}
         </div>
@@ -66,3 +78,4 @@ function Glossary() {
 }
 
 export default Glossary;
+
