@@ -123,3 +123,12 @@
   outline: none;
   box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.4);
 }
+
+.tech-icons svg {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.tech-icons svg:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
+
