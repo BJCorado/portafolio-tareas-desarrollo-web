@@ -60,7 +60,7 @@ function Glossary() {
       </button>
 
       {showGlossary && (
-        <div className="mt-3">
+        <div className="mt-3 glosario-texto">
           {Object.keys(groupedGlossary).sort().map((letter) => (
             <div key={letter} className="mb-4">
               <div className="decorative-letter">{letter}</div>
