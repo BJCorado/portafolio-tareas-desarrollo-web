@@ -1,4 +1,5 @@
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaReact, FaNodeJs } from 'react-icons/fa';
+import { SiJavascript, SiBootstrap, SiAxios, SiVercel } from 'react-icons/si';
 
 function Projects() {
   return (
@@ -12,8 +13,12 @@ function Projects() {
             <div className="card-body d-flex flex-column">
               <h5 className="card-title">Consumo de API de Marvel</h5>
               <p className="card-text flex-grow-1">
-                Este proyecto muestra cómo consumir la API oficial de Marvel para obtener personajes, usando JavaScript y Axios.
+                Este proyecto muestra cómo consumir la API alternativa(super hero) de Marvel para obtener personajes, usando JavaScript y Axios.
               </p>
+              <div className="tech-icons mb-3">
+             <SiJavascript title="JavaScript" className="me-2" size={24} />
+             <SiAxios title="Axios" className="me-2" size={24} />
+             </div>
               <div>
                 <a
                   href="https://github.com/BJCorado/proyecto-API"
@@ -37,6 +42,11 @@ function Projects() {
               <p className="card-text flex-grow-1">
                 Proyecto desarrollado con React, JavaScript y Bootstrap que presenta una hoja de vida profesional de forma organizada, moderna y responsiva. Contiene secciones como perfil, formación, experiencia, habilidades y contacto.
               </p>
+              <div className="tech-icons mb-3">
+              <FaReact title="React" className="me-2" size={24} />
+              <SiJavascript title="JavaScript" className="me-2" size={24} />
+              <SiBootstrap title="Bootstrap" className="me-2" size={24} />
+               </div>
               <div>
                 <a
                   href="https://github.com/BJCorado/Mi-Hoja-De-Vida"
@@ -68,6 +78,13 @@ function Projects() {
       <p className="card-text flex-grow-1">
         Aplicación web que permite guardar información de un formulario en un archivo Excel (.xlsx), usando React para el frontend y Node.js con ExcelJS en el backend. Desplegado en Vercel y Render.
       </p>
+      <div className="tech-icons mb-3">
+        <FaReact title="React" className="me-2" size={24} />
+        <FaNodeJs title="Node.js" className="me-2" size={24} />
+       <SiJavascript title="JavaScript" className="me-2" size={24} />
+       <SiBootstrap title="Bootstrap" className="me-2" size={24} />
+       <SiVercel title="Vercel" className="me-2" size={24} />
+     </div>
       <div>
         <a
           href="https://github.com/BJCorado/formulario-excel"
