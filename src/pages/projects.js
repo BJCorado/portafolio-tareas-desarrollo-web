@@ -1,4 +1,4 @@
-import { FaGithub, FaExternalLinkAlt, FaReact, FaNodeJs } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaReact, FaNodeJs, FaHtml5, FaCss3Alt } from 'react-icons/fa';
 import { SiJavascript, SiBootstrap, SiAxios, SiVercel } from 'react-icons/si';
 
 function Projects() {
@@ -16,8 +16,10 @@ function Projects() {
                 Este proyecto muestra cómo consumir la API alternativa(super hero) de Marvel para obtener personajes, usando JavaScript y Axios.
               </p>
               <div className="tech-icons mb-3">
-             <SiJavascript title="JavaScript" className="me-2" size={24} />
-             <SiAxios title="Axios" className="me-2" size={24} />
+             <FaHtml5 size={24} color="#e34c26" className="me-2" />
+             <FaCss3Alt size={24} color="#264de4" className="me-2" />
+             <SiJavascript title="JavaScript" size={24} style={{ color: '#F7DF1E' }} className="me-2" />
+            <SiAxios title="Axios" size={24} style={{ color: '#5A29E4' }} className="me-2" />
              </div>
               <div>
                 <a
@@ -43,9 +45,12 @@ function Projects() {
                 Proyecto desarrollado con React, JavaScript y Bootstrap que presenta una hoja de vida profesional de forma organizada, moderna y responsiva. Contiene secciones como perfil, formación, experiencia, habilidades y contacto.
               </p>
               <div className="tech-icons mb-3">
-              <FaReact title="React" className="me-2" size={24} />
-              <SiJavascript title="JavaScript" className="me-2" size={24} />
-              <SiBootstrap title="Bootstrap" className="me-2" size={24} />
+              <FaHtml5 size={24} color="#e34c26" className="me-2" />
+              <FaCss3Alt size={24} color="#264de4" className="me-2" />
+              <FaReact title="React" size={24} style={{ color: '#61DAFB' }} className="me-2" />
+              <SiJavascript title="JavaScript" size={24} style={{ color: '#F7DF1E' }} className="me-2" />
+              <SiBootstrap title="Bootstrap" size={24} style={{ color: '#7952B3' }} className="me-2" />
+              <SiVercel title="Vercel" size={24} style={{ color: '#000000' }} className="me-2" />
                </div>
               <div>
                 <a
@@ -79,11 +84,11 @@ function Projects() {
         Aplicación web que permite guardar información de un formulario en un archivo Excel (.xlsx), usando React para el frontend y Node.js con ExcelJS en el backend. Desplegado en Vercel y Render.
       </p>
       <div className="tech-icons mb-3">
-        <FaReact title="React" className="me-2" size={24} />
-        <FaNodeJs title="Node.js" className="me-2" size={24} />
-       <SiJavascript title="JavaScript" className="me-2" size={24} />
-       <SiBootstrap title="Bootstrap" className="me-2" size={24} />
-       <SiVercel title="Vercel" className="me-2" size={24} />
+        <FaReact title="React" size={24} style={{ color: '#61DAFB' }} className="me-2" />
+        <FaNodeJs title="Node.js" size={24} style={{ color: '#339933' }} className="me-2" />
+       <SiJavascript title="JavaScript" size={24} style={{ color: '#F7DF1E' }} className="me-2" />
+       <SiBootstrap title="Bootstrap" size={24} style={{ color: '#7952B3' }} className="me-2" />
+       <SiVercel title="Vercel" size={24} style={{ color: '#000000' }} className="me-2" />
      </div>
       <div>
         <a
