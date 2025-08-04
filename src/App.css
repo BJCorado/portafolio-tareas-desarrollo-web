@@ -40,14 +40,14 @@
 
 /* Botón activo (ruta actual con NavLink) */
 .nav-link.active {
-  background-color: #ffc107 !important; /* amarillo */
+ background: linear-gradient(to right, #0d6efd, #6610f2) !important;
   color: white !important;
 }
 
 /* Hover: agranda, cambia fondo y texto */
 .nav-link:hover {
   transform: scale(1.1);
-  background-color: #ffc107 !important;
+  background: linear-gradient(to right, #0d6efd, #6610f2) !important;
   color: white !important;
 }
 
@@ -101,4 +101,25 @@
   font-family: 'Georgia', serif;
   line-height: 1.8;
   margin-top: 1rem;
+}
+
+.custom-toggle-btn {
+  background: linear-gradient(to right, #0d6efd, #6610f2);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.custom-toggle-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.25);
+}
+
+.custom-toggle-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.4);
 }

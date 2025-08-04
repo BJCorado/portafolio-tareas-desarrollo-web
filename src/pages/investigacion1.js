@@ -201,7 +201,7 @@ const textoConNegrita = textoEscapado.replace(/\n\*\*(.*?)\*\*\n/g, '<p><strong>
   return (
     <div className="mb-4">
       <button
-        className="btn btn-secondary mb-3"
+        className="custom-toggle-btn mb-3"
         onClick={() => setMostrar(!mostrar)}
       >
         Investigación: Formularios HTML y CSS {mostrar ? '▲' : '▼'}

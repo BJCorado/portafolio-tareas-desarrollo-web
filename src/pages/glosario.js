@@ -53,7 +53,7 @@ function Glossary() {
   return (
     <div>
       <button
-        className="btn btn-primary mb-3"
+        className="custom-toggle-btn mb-3"
         onClick={() => setShowGlossary(!showGlossary)}
       >
         Glosario {showGlossary ? '▲' : '▼'}
