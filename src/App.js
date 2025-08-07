@@ -13,7 +13,7 @@ function App() {
      <div className="app-wrapper"> {/*CONTENEDOR QUE ENVUELVE TODO */}
     <Router>
       {/* Menú fijo y moderno */}
-<Navbar className="floating-navbar" expand="lg">
+<Navbar className="floating-navbar" expand="lg" collapseOnSelect>
   <Container>
     <Navbar.Brand className="fw-bold fs-4 text-white d-flex align-items-center gap-2">
       <FaBriefcase /> Portafolio De Tareas
@@ -21,11 +21,11 @@ function App() {
 
     <Navbar.Toggle aria-controls="navbar-nav" />
     <Navbar.Collapse id="navbar-nav">
-     <Nav.Link as={NavLink} to="/tareas">
+     <Nav.Link as={NavLink} to="/tareas" eventKey="tareas">
   <FaBook className="me-2" /> Tareas y Recursos
 </Nav.Link>
 
-<Nav.Link as={NavLink} to="/proyectos">
+<Nav.Link as={NavLink} to="/proyectos" eventKey="proyectos">
   <FaCode className="me-2" /> Proyectos Web
 </Nav.Link>
     </Navbar.Collapse>
