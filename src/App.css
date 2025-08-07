@@ -8,7 +8,7 @@ body {
 
 .app-wrapper {
   min-height: 100vh;
-  background: radial-gradient(circle at top left, #0d6efd 15%, #1b1e2d 65%, #000 90%);
+  background: radial-gradient(circle at top left, #0d4372 15%, #1a2c50 60%, #000000 90% );
   background-size: 200% 200%;
   animation: fondoAnimado 10s ease-in-out infinite;
   overflow-x: hidden;
