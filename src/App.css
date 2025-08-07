@@ -3,7 +3,7 @@
 }
 
 .project-card {
-  border-radius: 2rem;
+  border-radius: 2rem !important;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
   transform: translateY(-5px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -13,7 +13,10 @@
 /* Efecto al pasar el mouse (aún más arriba y con más sombra) */
 .project-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+  box-shadow:
+  0 8px 16px rgba(13, 110, 253, 0.3),   /* azul */
+  0 16px 32px rgba(102, 16, 242, 0.3) !important;  /* morado */
+
 }
 
 /* Animación de levitación */
