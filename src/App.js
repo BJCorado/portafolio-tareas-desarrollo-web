@@ -10,6 +10,7 @@ import Projects from './pages/projects';
 
 function App() {
   return (
+     <div className="app-wrapper"> {/*CONTENEDOR QUE ENVUELVE TODO */}
     <Router>
       {/* Menú fijo y moderno */}
 <Navbar className="floating-navbar" expand="lg">
@@ -40,6 +41,7 @@ function App() {
         </Routes>
       </div>
     </Router>
+    </div>
   );
 }
 
