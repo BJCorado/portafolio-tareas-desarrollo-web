@@ -12,7 +12,10 @@ function Projects() {
         <div className="col-md-6 col-lg-4 mb-4">
           <div className="card shadow-sm project-card h-100">
             <div className="card-body d-flex flex-column">
-              <h5 className="card-title">Consumo de API de Marvel</h5>
+              <h5 className="card-title">Consumo de API</h5>
+              <div className="project-img-container">
+               <img src="/marvel.png" alt="Marvel API"className="project-img"/>
+              </div>
               <p className="card-text flex-grow-1">
                 Este proyecto muestra cómo consumir la API alternativa(super hero) de Marvel para obtener personajes, usando JavaScript y Axios.
               </p>
@@ -41,7 +44,10 @@ function Projects() {
         <div className="col-md-6 col-lg-4 mb-4">
           <div className="card shadow-sm project-card h-100">
             <div className="card-body d-flex flex-column">
-              <h5 className="card-title">Sitio Web: Hoja de Vida Personal</h5>
+              <h5 className="card-title">Hoja de Vida Personal</h5>
+              <div className="project-img-container">
+               <img src="/hoja de vida.png" alt="Hoja de vida"className="project-img"/>
+              </div>
               <p className="card-text flex-grow-1">
                 Proyecto desarrollado con React, JavaScript y Bootstrap que presenta una hoja de vida profesional de forma organizada, moderna y responsiva. Contiene secciones como perfil, formación, experiencia, habilidades y contacto.
               </p>
@@ -81,6 +87,9 @@ function Projects() {
   <div className="card shadow-sm project-card h-100">
     <div className="card-body d-flex flex-column">
       <h5 className="card-title">Formulario con Excel y Backend</h5>
+      <div className="project-img-container">
+               <img src="/formulario.png" alt="Formulario"className="project-img"/>
+              </div>
       <p className="card-text flex-grow-1">
         Aplicación web que permite guardar información de un formulario en un archivo Excel (.xlsx), usando React para el frontend y Node.js con ExcelJS en el backend. Desplegado en Vercel y Render.
       </p>

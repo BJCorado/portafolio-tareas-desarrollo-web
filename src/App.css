@@ -68,6 +68,18 @@ h2 {
   }
 }
 
+.project-img-container {
+  text-align: center;
+  margin-bottom: 0.50rem; /* separa la img del resto */
+}
+
+.project-img {
+  display: block; 
+  margin: 0 auto 0.50rem; /* centrado y separación */
+  width: 250px;
+  height: auto; /* mantiene proporciones */
+  border-radius: 1rem; /* bordes redondeados */
+}
 
 /* Efecto base para todos los nav-link */
 .nav-link {
