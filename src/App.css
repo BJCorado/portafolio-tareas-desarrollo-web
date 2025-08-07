@@ -1,10 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top left, #0d6efd 15%, #1b1e2d 65%, #000 90%);
+  background-size: 200% 200%;
+  animation: fondoAnimado 10s ease-in-out infinite;
+  color: white; /* Mejora contraste del texto */
+}
+
+@keyframes fondoAnimado {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h2 {
+  color: white !important;
+}
+
+
 .main-content {
   padding-top: 70px !important; /* Ajusta según la altura real del navbar */
 }
 
 .project-card {
   border-radius: 2rem !important;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  background: rgba(33, 37, 41, 0.35) !important; /*fondo translúcido */
+  backdrop-filter: blur(10px) !important; /* efecto vidrio */
+  -webkit-backdrop-filter: blur(10px) !important;
+  color: white !important; /* texto claro para contraste */
+  
   transform: translateY(-5px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   animation: levitate 3s ease-in-out infinite;
@@ -32,7 +63,6 @@
 
 /* Efecto base para todos los nav-link */
 .nav-link {
-  background-color: yellow;
   color: white !important;
   font-weight: 600;
   border-radius: 0.5rem;
