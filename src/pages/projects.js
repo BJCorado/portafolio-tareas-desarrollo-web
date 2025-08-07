@@ -16,8 +16,8 @@ function Projects() {
                 Este proyecto muestra cómo consumir la API alternativa(super hero) de Marvel para obtener personajes, usando JavaScript y Axios.
               </p>
               <div className="tech-icons mb-3">
-             <FaHtml5 size={24} color="#e34c26" className="me-2" />
-             <FaCss3Alt size={24} color="#264de4" className="me-2" />
+             <FaHtml5 title="Html5" size={24} color="#e34c26" className="me-2" />
+             <FaCss3Alt title="Css3" size={24} color="#264de4" className="me-2" />
              <SiJavascript title="JavaScript" size={24} style={{ color: '#F7DF1E' }} className="me-2" />
             <SiAxios title="Axios" size={24} style={{ color: '#5A29E4' }} className="me-2" />
              </div>
@@ -45,8 +45,8 @@ function Projects() {
                 Proyecto desarrollado con React, JavaScript y Bootstrap que presenta una hoja de vida profesional de forma organizada, moderna y responsiva. Contiene secciones como perfil, formación, experiencia, habilidades y contacto.
               </p>
               <div className="tech-icons mb-3">
-              <FaHtml5 size={24} color="#e34c26" className="me-2" />
-              <FaCss3Alt size={24} color="#264de4" className="me-2" />
+              <FaHtml5 title="Html5" size={24} color="#e34c26" className="me-2" />
+              <FaCss3Alt title="Css3" size={24} color="#264de4" className="me-2" />
               <FaReact title="React" size={24} style={{ color: '#61DAFB' }} className="me-2" />
               <SiJavascript title="JavaScript" size={24} style={{ color: '#F7DF1E' }} className="me-2" />
               <SiBootstrap title="Bootstrap" size={24} style={{ color: '#7952B3' }} className="me-2" />
