@@ -102,7 +102,7 @@ h2 {
   background: rgba(33, 37, 41, 0.35); /* fondo oscuro translúcido */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-radius: 1rem; /* redondeo completo en las 4 esquinas */ 
+  border-radius: 2rem; /* redondeo completo en las 4 esquinas */ 
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   z-index: 1050; /* por encima del contenido */
