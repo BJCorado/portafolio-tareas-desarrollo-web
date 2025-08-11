@@ -1,5 +1,5 @@
 import { FaGithub, FaExternalLinkAlt, FaReact, FaNodeJs, FaHtml5, FaCss3Alt } from 'react-icons/fa';
-import { SiJavascript, SiBootstrap, SiAxios, SiVercel } from 'react-icons/si';
+import { SiJavascript, SiBootstrap, SiAxios, SiVercel, SiTypescript, SiVite } from 'react-icons/si';
 
 function Projects() {
   return (
@@ -121,6 +121,49 @@ function Projects() {
        </div>
       </div>
     </div>
+            {/* Proyecto 4: web responsiva */}
+        <div className="col-md-6 col-lg-4 mb-4">
+          <div className="card shadow-sm project-card h-100">
+            <div className="card-body d-flex flex-column">
+              <h5 className="card-title">Web Responsiva</h5>
+              <div className="project-img-container">
+               <img src="/web responsiva.png" alt="Web Responsiva"className="project-img"/>
+              </div>
+              <p className="card-text flex-grow-1">
+              Esta web demuestra un diseño adaptable en móvil, tableta y escritorio utilizando utilidades responsivas de Bootstrap y media queries personalizadas.
+              </p>
+              <div className="tech-icons mb-3">
+              <FaHtml5 title="Html5" size={24} color="#e34c26" className="me-2" />
+              <FaCss3Alt title="Css3" size={24} color="#264de4" className="me-2" />
+              <FaReact title="React" size={24} style={{ color: '#61DAFB' }} className="me-2" />
+              <SiTypescript title="TypeScript" size={24} style={{ color: '#3178c6' }} className="me-2" />
+              <SiBootstrap title="Bootstrap" size={24} style={{ color: '#7952B3' }} className="me-2" />
+              <SiVite title="Vite" size={24} style={{ color: '#646CFF' }} className="me-2" />
+              <SiVercel title="Vercel" size={24} style={{ color: '#000000' }} className="me-2" />
+               </div>
+              <div>
+                <a
+                  href="https://github.com/BJCorado/Web-Responsiva"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-dark me-2"
+                >
+                  <FaGithub className="me-1" />
+                  GitHub
+                </a>
+                <a
+                  href="https://web-responsiva-olive.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-outline-primary"
+                >
+                  <FaExternalLinkAlt className="me-1" />
+                  Ver Sitio Web
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
      </div>
      </div>
   );
