@@ -2,11 +2,13 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route, NavLink, Navigate } from 'react-router-dom';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import { FaBook, FaCode,} from 'react-icons/fa';
+import { FaBook, FaCode, FaInfoCircle} from 'react-icons/fa';
 import { FaBriefcase } from 'react-icons/fa';
 
 import Tareas from './pages/tareas';
 import Projects from './pages/projects';
+import Acerca from './pages/acerca';
+
 
 function App() {
   return (
@@ -28,6 +30,10 @@ function App() {
 <Nav.Link as={NavLink} to="/proyectos" eventKey="proyectos">
   <FaCode className="me-2" /> Proyectos Web
 </Nav.Link>
+
+<Nav.Link as={NavLink} to="/acerca">
+  <FaInfoCircle className="me-2" /> Acerca de
+</Nav.Link>
     </Navbar.Collapse>
   </Container>
 </Navbar>
@@ -37,6 +43,7 @@ function App() {
         <Routes>
           <Route path="/tareas" element={<Tareas />} />
           <Route path="/proyectos" element={<Projects />} />
+          <Route path="/acerca" element={<Acerca />} />
           <Route path="/" element={<Navigate to="/tareas" replace />} />
         </Routes>
       </div>
