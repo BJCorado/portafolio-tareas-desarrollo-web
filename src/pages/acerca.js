@@ -8,9 +8,7 @@ function Acerca() {
         {/* Encabezado con logo y título */}
         <div className="text-center mb-4">
           <img
-            src="/logo.png"
-            className="acerca-logo mb-3"
-          />
+            src="/logo.png" alt="Logo de la Universidad Mariano Gálvez"className="acerca-logo mb-3" />
           <h2 className="mb-2">Acerca de este Portafolio</h2>
           <p className="mb-0">
             Este portafolio reúne tareas, investigaciones y proyectos desarrollados durante el curso.
