@@ -241,3 +241,50 @@ h2 {
   100% { clip: rect(40px, 9999px, 80px, 0); }
 }
 
+.acerca-card {
+  max-width: 960px;
+  background: rgba(33, 37, 41, 0.35);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow:
+    0 8px 16px rgba(13, 110, 253, 0.15),
+    0 16px 32px rgba(102, 16, 242, 0.15);
+}
+
+.acerca-logo {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.25));
+}
+
+.acerca-section {
+  background: rgba(33, 37, 41, 0.35);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 0.8rem;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.acerca-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.acerca-list li {
+  margin-bottom: .5rem;
+}
+
+.acerca-list a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(255,255,255,0.4);
+}
+
+.acerca-list a:hover {
+  opacity: .9;
+  border-bottom-color: transparent;
+}
