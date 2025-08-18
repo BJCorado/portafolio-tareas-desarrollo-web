@@ -40,11 +40,11 @@ function Acerca() {
                 <li><strong>Nombre:</strong> <span>Ing. Carmelo Estuardo Mayen Monterroso </span></li>
                 <li>
                   <strong>Correo:</strong>{" "}
-                  <a href="mailto:correo.ing@universidad.edu"><FaEnvelope className="me-1" /> correo.ing@universidad.edu</a>
+                  <a href="mailto:correo.carmelo5mayen@gmail.com"><FaEnvelope className="me-1" />carmelo5mayen@gmail.com</a>
                 </li>
                 <li>
                   <strong>Contacto:</strong>{" "}
-                  <a href="tel:+50200000000"><FaPhone className="me-1" /> +502 0000 0000</a>
+                  <a href="tel:+502 4206-6010"><FaPhone className="me-1" /> +502 4206-6010</a>
                 </li>
               </ul>
             </div>
@@ -60,11 +60,11 @@ function Acerca() {
                 <li><strong>Nombre:</strong> <span>Brayan Josue Corado Robles</span></li>
                 <li>
                   <strong>Correo:</strong>{" "}
-                  <a href="mailto:tucorreo@dominio.com"><FaEnvelope className="me-1" /> tucorreo@dominio.com</a>
+                  <a href="mailto:brayancorado454@gmail.com"><FaEnvelope className="me-1" /> brayancorado454@gmail.com</a>
                 </li>
                 <li>
                   <strong>Contacto:</strong>{" "}
-                  <a href="tel:+50200000000"><FaPhone className="me-1" /> +502 0000 0000</a>
+                  <a href="tel:+502 5156-2736"><FaPhone className="me-1" /> +502 5156-2736</a>
                 </li>
               </ul>
             </div>
