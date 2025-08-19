@@ -31,7 +31,7 @@ function App() {
   <FaCode className="me-2" /> Proyectos Web
 </Nav.Link>
 
-<Nav.Link as={NavLink} to="/acerca">
+<Nav.Link as={NavLink} to="/acerca" eventKey="acerca">
   <FaInfoCircle className="me-2" /> Acerca de
 </Nav.Link>
     </Navbar.Collapse>
