@@ -3,12 +3,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ScrollSpy from "bootstrap/js/dist/scrollspy";
 import React, { useEffect } from "react";
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import { FaBook, FaCode, FaInfoCircle, FaBriefcase } from 'react-icons/fa';
+import { FaBook, FaCode, FaHome, FaBriefcase } from 'react-icons/fa';
 import { useState } from 'react';
 // Importar componentes de las páginas
 import Tareas from './pages/tareas';
 import Projects from './pages/projects';
-import Acerca from './pages/acerca';
+import Acerca from './pages/inicio';
 
 function App() {
   useEffect(() => {
@@ -35,14 +35,14 @@ function App() {
           <Navbar.Toggle aria-controls="navbar-nav" />
           <Navbar.Collapse id="navbar-nav">
             <Nav className="ms-auto" onSelect={() => setExpanded(false)}>
+              <Nav.Link href="#inicio">
+                <FaHome className="me-2" /> Inicio
+              </Nav.Link>
               <Nav.Link href="#tareas">
                 <FaBook className="me-2" /> Tareas y Recursos
               </Nav.Link>
               <Nav.Link href="#proyectos">
                 <FaCode className="me-2" /> Proyectos Web
-              </Nav.Link>
-              <Nav.Link href="#acerca">
-                <FaInfoCircle className="me-2" /> Acerca de
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -51,14 +51,14 @@ function App() {
 
       {/* Contenido (secciones) */}
       <main className="container py-4 main-content">
+         <section id="inicio" className="mb-5">
+          <Acerca />
+        </section>
         <section id="tareas" className="mb-5">
           <Tareas />
         </section>
         <section id="proyectos" className="mb-5">
           <Projects />
-        </section>
-        <section id="acerca" className="mb-5">
-          <Acerca />
         </section>
       </main>
     </div>
