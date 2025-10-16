@@ -1,5 +1,6 @@
-import { FaGithub, FaExternalLinkAlt, FaReact, FaNodeJs, FaHtml5, FaCss3Alt } from 'react-icons/fa';
-import { SiJavascript, SiBootstrap, SiAxios, SiVercel, SiTypescript, SiVite } from 'react-icons/si';
+import { FaGithub, FaExternalLinkAlt, FaReact, FaNodeJs, FaHtml5, FaCss3Alt,FaDocker,FaDatabase } from 'react-icons/fa';
+import { SiJavascript, SiBootstrap, SiAxios, SiVercel, SiTypescript, SiVite, SiSwagger, SiJsonwebtokens
+  ,SiExpress,SiTailwindcss, SiReactrouter,SiGoogledrive,SiFreecodecamp,SiSass,SiRedux,SiJquery   } from 'react-icons/si';
 
 function Projects() {
   return (
@@ -164,6 +165,187 @@ function Projects() {
             </div>
           </div>
         </div>
+        {/* Proyecto 5: API Gestión de Expedientes e Indicios */}
+<div className="col-md-6 col-lg-4 mb-4">
+  <div className="card shadow-sm project-card h-100">
+    <div className="card-body d-flex flex-column">
+      <h5 className="card-title">API Gestión de Expedientes e Indicios</h5>
+
+      <div className="project-img-container">
+        <img 
+          src="/apigestionexpedientes.png" 
+          alt="API Gestión de Expedientes e Indicios" 
+          className="project-img" 
+        />
+      </div>
+
+      <p className="card-text flex-grow-1">
+        API RESTful desarrollada con Node.js y Express (TypeScript) para la gestión de expedientes e indicios. 
+        Implementa autenticación JWT, middlewares de rol, procedimientos almacenados en SQL Server para CRUD, 
+        y documentación interactiva con Swagger. Desplegada mediante contenedores Docker y Docker Compose.
+      </p>
+
+      <div className="tech-icons mb-3">
+        <FaNodeJs title="Node.js" size={24} style={{ color: '#68A063' }} className="me-2" />
+        <SiExpress title="Express.js" size={24} style={{ color: '#000000' }} className="me-2" />
+        <SiTypescript title="TypeScript" size={24} style={{ color: '#3178C6' }} className="me-2" />
+        <SiJsonwebtokens title="JWT (JSON Web Token)" size={24} style={{ color: '#D63AFF' }} className="me-2" />
+        <FaDatabase title="SQL Server" size={24} style={{ color: '#CC2927' }} className="me-2" />
+        <SiSwagger title="Swagger" size={24} style={{ color: '#85EA2D' }} className="me-2" />
+        <FaDocker title="Docker" size={24} style={{ color: '#2496ED' }} className="me-2" />
+      </div>
+
+      <div>
+        <a
+          href="https://github.com/BJCorado/API_Gestion_de_Expedientes_e_Indicios"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-dark me-2"
+        >
+          <FaGithub className="me-1" />
+          GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{/* Proyecto 6: Gestor de Expedientes e Indicios — Frontend */}
+<div className="col-md-6 col-lg-4 mb-4">
+  <div className="card shadow-sm project-card h-100">
+    <div className="card-body d-flex flex-column">
+      <h5 className="card-title">Gestor de Expedientes e Indicios — Frontend</h5>
+
+      <div className="project-img-container">
+        <img 
+          src="/frontendexpedientes.jpeg" 
+          alt="Gestor de Expedientes e Indicios Frontend" 
+          className="project-img" 
+        />
+      </div>
+
+      <p className="card-text flex-grow-1">
+        SPA desarrollada con React, Vite y TypeScript para la gestión de expedientes e indicios. 
+        Implementa autenticación JWT, control de acceso por roles (técnico | coordinador), 
+        operaciones CRUD, y una experiencia fluida con diseño oscuro y animaciones de entrada. 
+        Se conecta a la API REST para manejar datos de usuarios, expedientes e indicios.
+      </p>
+
+      <div className="tech-icons mb-3">
+        <FaReact title="React" size={24} style={{ color: '#61DAFB' }} className="me-2" />
+        <SiVite title="Vite" size={24} style={{ color: '#FFD62E' }} className="me-2" />
+        <SiTypescript title="TypeScript" size={24} style={{ color: '#3178C6' }} className="me-2" />
+        <SiTailwindcss title="Tailwind CSS" size={24} style={{ color: '#38BDF8' }} className="me-2" />
+        <SiAxios title="Axios" size={24} style={{ color: '#5A29E4' }} className="me-2" />
+        <SiReactrouter title="React Router" size={24} style={{ color: '#CA4245' }} className="me-2" />
+        <FaDocker title="Docker" size={24} style={{ color: '#2496ED' }} className="me-2" />
+      </div>
+
+      <div>
+        <a
+          href="https://github.com/BJCorado/FRONTEND_Gestion_de_Expedientes_e_Indicios"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-dark me-2"
+        >
+          <FaGithub className="me-1" />
+          GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{/* Proyecto 7: Integración Backend y Frontend */}
+<div className="col-md-6 col-lg-4 mb-4">
+  <div className="card shadow-sm project-card h-100">
+    <div className="card-body d-flex flex-column">
+      <h5 className="card-title">Video Integración Backend y Frontend — API + SPA</h5>
+
+      <div className="project-img-container">
+        <img 
+          src="/videointegracion.png" 
+          alt="Integración Backend y Frontend" 
+          className="project-img" 
+        />
+      </div>
+
+      <p className="card-text flex-grow-1">
+        Demostración completa de la integración entre el <strong>backend</strong> (Node.js, Express, SQL Server, JWT)
+        y el <strong>frontend</strong> (React, Vite, TypeScript, Tailwind CSS). 
+        Ambos entornos se ejecutan en contenedores Docker, conectados mediante variables de entorno.
+        Se muestran operaciones CRUD reales con autenticación por roles (técnico | coordinador) 
+        y comunicación directa con la base de datos.
+      </p>
+
+      <div className="tech-icons mb-3">
+        <FaNodeJs title="Node.js" size={24} style={{ color: '#68A063' }} className="me-2" />
+        <SiExpress title="Express.js" size={24} style={{ color: '#000000' }} className="me-2" />
+        <SiTypescript title="TypeScript" size={24} style={{ color: '#3178C6' }} className="me-2" />
+        <FaReact title="React" size={24} style={{ color: '#61DAFB' }} className="me-2" />
+        <SiTailwindcss title="Tailwind CSS" size={24} style={{ color: '#38BDF8' }} className="me-2" />
+        <FaDocker title="Docker" size={24} style={{ color: '#2496ED' }} className="me-2" />
+        <FaDatabase title="SQL Server" size={24} style={{ color: '#CC2927' }} className="me-2" />
+        <SiJsonwebtokens title="JWT" size={24} style={{ color: '#D63AFF' }} className="me-2" />
+      </div>
+
+      <div>
+        <a
+          href="https://drive.google.com/file/d/1vp1fLv1f3V8XJXZ2uno9J1Emw_nmzRq6/view?usp=drivesdk"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-outline-primary"
+        >
+          <SiGoogledrive size={18} className="me-2" />
+          Ver Video de Demostración
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{/* Proyecto 8: Certificación — Front End Development Libraries (freeCodeCamp) */}
+<div className="col-md-6 col-lg-4 mb-4">
+  <div className="card shadow-sm project-card h-100">
+    <div className="card-body d-flex flex-column">
+      <h5 className="card-title">Certificación — Front End Development Libraries</h5>
+
+      <div className="project-img-container">
+        <img 
+          src="/certificado.jpeg" 
+          alt="freeCodeCamp Front End Development Libraries" 
+          className="project-img" 
+        />
+      </div>
+
+      <p className="card-text flex-grow-1">
+        Certificación de <strong>freeCodeCamp</strong> centrada en librerías de desarrollo frontend. 
+        Abarca <strong>React</strong>, <strong>Redux</strong>, <strong>Bootstrap</strong>, <strong>jQuery</strong> y <strong>SASS</strong>, 
+        con ejercicios y proyectos prácticos que validan el manejo de componentes, estado global, estilos y 
+        creación de interfaces responsivas.
+      </p>
+
+      <div className="tech-icons mb-3">
+        <FaReact title="React" size={24} style={{ color: '#61DAFB' }} className="me-2" />
+        <SiRedux title="Redux" size={24} style={{ color: '#764ABC' }} className="me-2" />
+        <SiBootstrap title="Bootstrap" size={24} style={{ color: '#7952B3' }} className="me-2" />
+        <SiJquery title="jQuery" size={24} style={{ color: '#0769AD' }} className="me-2" />
+        <SiSass title="SASS" size={24} style={{ color: '#CC6699' }} className="me-2" />
+        <SiFreecodecamp title="freeCodeCamp" size={24} style={{ color: '#0A0A23' }} className="me-2" />
+      </div>
+
+      <div>
+        <a
+          href="https://www.freecodecamp.org/certification/fcc-00d42891-0988-464b-99f3-b494ac9eda8f/front-end-development-libraries"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-outline-primary d-inline-flex align-items-center"
+        >
+          <SiFreecodecamp size={18} className="me-2" />
+          Ver Certificado
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
      </div>
      </div>
   );
