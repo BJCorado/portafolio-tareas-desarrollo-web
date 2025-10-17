@@ -1,4 +1,4 @@
-import { FaGithub, FaExternalLinkAlt, FaReact, FaNodeJs, FaHtml5, FaCss3Alt,FaDocker,FaDatabase } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaReact, FaNodeJs, FaHtml5, FaCss3Alt,FaDocker,FaDatabase,FaHome } from 'react-icons/fa';
 import { SiJavascript, SiBootstrap, SiAxios, SiVercel, SiTypescript, SiVite, SiSwagger, SiJsonwebtokens
   ,SiExpress,SiTailwindcss, SiReactrouter,SiGoogledrive,SiFreecodecamp,SiSass,SiRedux,SiJquery   } from 'react-icons/si';
 
@@ -345,6 +345,62 @@ function Projects() {
     </div>
   </div>
 </div>
+{/* Proyecto 9: Portafolio de Tareas (este sitio) */}
+<div className="col-md-6 col-lg-4 mb-4">
+  <div className="card shadow-sm project-card h-100">
+    <div className="card-body d-flex flex-column">
+      <h5 className="card-title">Portafolio de Tareas — Sitio Actual</h5>
+
+      <div className="project-img-container">
+        <img 
+          src="/portafolio_tareas.png" 
+          alt="Portafolio de Tareas - Sitio Actual" 
+          className="project-img" 
+        />
+      </div>
+
+      <p className="card-text flex-grow-1">
+        Portafolio creado con React y JavaScript para presentar tareas y proyectos, con estilo glassmorphism,
+        animaciones en las cards y sección de comentarios integrada con Giscus.Maquetación con Bootstrap/CSS puro. Desplegado en Vercel.
+      </p>
+
+      <div className="tech-icons mb-3">
+        <FaReact title="React" size={24} style={{ color: '#61DAFB' }} className="me-2" />
+        <SiJavascript title="JavaScript" size={24} style={{ color: '#F7DF1E' }} className="me-2" />
+        <FaHtml5 title="HTML5" size={24} color="#e34c26" className="me-2" />
+        <FaCss3Alt title="CSS3" size={24} color="#264de4" className="me-2" />
+        <SiBootstrap title="Bootstrap" size={24} style={{ color: '#7952B3' }} className="me-2" />
+        <SiReactrouter title="React Router" size={24} style={{ color: '#CA4245' }} className="me-2" />
+        <SiVercel title="Vercel" size={24} style={{ color: '#000000' }} className="me-2" />
+      </div>
+
+      <div>
+        <a
+          href="https://github.com/BJCorado/portafolio-tareas-desarrollo-web"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-dark me-2"
+        >
+          <FaGithub className="me-1" />
+          GitHub
+        </a>
+
+        {/* Botón informativo: ya estás en el sitio */}
+        <button
+          type="button"
+          className="btn btn-outline-primary"
+          disabled
+          aria-disabled="true"
+          title="Ya estás navegando este sitio"
+        >
+          <FaHome className="me-1" />
+          Estás viendo este sitio
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
      </div>
      </div>
