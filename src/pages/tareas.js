@@ -5,7 +5,7 @@ function Tareas() {
   return (
     <div className="container main-content">
       <h2 className="mb-4 text-center glitch"
-  data-text="Tareas y Recursos">Tareas y Recursos</h2>
+  data-text="TAREAS Y RECURSOS">TAREAS Y RECURSOS</h2>
 
       <Glosario />
       <Investigacion1 />

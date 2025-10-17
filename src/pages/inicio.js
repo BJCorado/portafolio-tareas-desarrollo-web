@@ -9,7 +9,8 @@ function Inicio() {
         <div className="text-center mb-4">
           <img
             src="/logo.png" alt="Logo de la Universidad Mariano Gálvez"className="inicio-logo mb-3" />
-          <h2 className="mb-2">Portafolio De Tareas</h2>
+                <h2 className="mb-4 text-center glitch"
+                data-text="PORTAFOLIO DE TAREAS">PORTAFOLIO DE TAREAS</h2>
           <p className="mb-2">
             Este portafolio reúne tareas, investigaciones y proyectos desarrollados durante el curso.
           </p>

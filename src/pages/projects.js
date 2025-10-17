@@ -6,7 +6,7 @@ function Projects() {
   return (
     <div className="container main-content">
       <h2 className="mb-4 text-center glitch"
-  data-text="Proyectos Web">Proyectos Web</h2>
+  data-text="PROYECTOS WEB">PROYECTOS WEB</h2>
 
       <div className="row">
         {/* Proyecto 1: API Marvel */}
