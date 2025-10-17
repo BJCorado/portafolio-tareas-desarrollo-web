@@ -1,0 +1,14 @@
+/* public/giscus-black.css */
+:root {
+  color-scheme: dark;
+  --color-canvas-default: #000000;
+  --color-canvas-subtle: #000000;
+  --color-canvas-inset: #000000;
+  --color-fg-default: #e5e7eb;
+  --color-fg-muted: #94a3b8;
+  --color-border-default: #1f2937;
+  --color-accent-fg: #60a5fa;
+  --color-success-fg: #22c55e;
+  --color-attention-fg: #f59e0b;
+  --color-danger-fg: #ef4444;
+}

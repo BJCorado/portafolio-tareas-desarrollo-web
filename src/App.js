@@ -9,6 +9,7 @@ import { useState } from 'react';
 import Tareas from './pages/tareas';
 import Projects from './pages/projects';
 import Acerca from './pages/inicio';
+import GiscusComments from "./components/GiscusComments";
 
 function App() {
   useEffect(() => {
@@ -60,6 +61,7 @@ function App() {
         <section id="proyectos" className="mb-5">
           <Projects />
         </section>
+        <GiscusComments />
       </main>
     </div>
   );
