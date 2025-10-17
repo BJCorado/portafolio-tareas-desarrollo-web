@@ -10,6 +10,7 @@ import Tareas from './pages/tareas';
 import Projects from './pages/projects';
 import Acerca from './pages/inicio';
 import GiscusComments from "./components/GiscusComments";
+import Footer from './components/Footer';
 
 function App() {
   useEffect(() => {
@@ -63,6 +64,7 @@ function App() {
         </section>
         <GiscusComments />
       </main>
+        <Footer />
     </div>
   );
 }
