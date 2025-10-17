@@ -129,14 +129,23 @@ h2 {
 .glosario-texto {
   white-space: pre-wrap;
   text-align: justify;
-  background-color: #ffffff;
+
+  /*Glassmorphism (igual que .project-card) */
+  background: rgba(33, 37, 41, 0.35);      /* fondo translúcido */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #ffffff;                           /* texto claro */
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  /* Estilo base que ya tenías / armonizado con tus cards */
   padding: 2rem;
-  border-radius: 1rem;
+  border-radius: 2rem;                      /* igual a .project-card */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
   font-family: 'Georgia', serif;
   line-height: 1.8;
   margin-top: 1rem;
 }
+
 
 .decorative-letter {
   font-size: 2.5rem;
@@ -151,14 +160,23 @@ h2 {
 .investigacion-texto {
   white-space: pre-wrap;
   text-align: justify;
-  background-color: #ffffff;
+
+  /* 👇 Glassmorphism (igual que .project-card) */
+  background: rgba(33, 37, 41, 0.35);      /* fondo translúcido */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #ffffff;                           /* texto claro */
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  /* Estilo base que ya tenías / armonizado con tus cards */
   padding: 2rem;
-  border-radius: 1rem;
+  border-radius: 2rem;                      /* igual a .project-card */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
   font-family: 'Georgia', serif;
   line-height: 1.8;
   margin-top: 1rem;
 }
+
 
 .custom-toggle-btn {
   background: rgba(33, 37, 41, 0.35); /* fondo oscuro translúcido */
