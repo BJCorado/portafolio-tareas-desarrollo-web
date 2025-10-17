@@ -23,6 +23,7 @@ function Inicio() {
                 <FaUniversity /> Información general </h5>
               <ul className="mb-0 inicio-list">
                 <li><strong>Universidad:</strong> <span>Mariano Galvez De Guatemala</span></li>
+                <li><strong>Carrera:</strong> <span>Ingeniería En Sistemas de Información y Ciencias de la Computación</span></li>
                 <li><strong>Curso:</strong> <span>Desarrollo Web</span> <FaBookOpen className="ms-2" /></li>
                 <li><strong>Semestre / Ciclo:</strong> <span>Octavo</span></li>
                 <li><strong>Sede:</strong> <span>Chiquimulilla,Santa Rosa</span></li>
