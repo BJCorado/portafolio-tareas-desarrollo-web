@@ -1,14 +1,19 @@
-/* public/giscus-black.css */
+/* giscus-black.css — variante GLASS (fondo transparente) */
 :root {
   color-scheme: dark;
-  --color-canvas-default: #000000;
-  --color-canvas-subtle: #000000;
-  --color-canvas-inset: #000000;
-  --color-fg-default: #e5e7eb;
-  --color-fg-muted: #94a3b8;
-  --color-border-default: #1f2937;
-  --color-accent-fg: #60a5fa;
-  --color-success-fg: #22c55e;
-  --color-attention-fg: #f59e0b;
-  --color-danger-fg: #ef4444;
+
+  /*fondo del iframe transparente */
+  --color-canvas-default: transparent;
+  --color-canvas-subtle: transparent;
+  --color-canvas-inset: transparent;
+
+  /* Texto y bordes para un vidrio oscuro */
+  --color-fg-default: #e6edf3;                /* texto principal */
+  --color-fg-muted: #a9b1ba;                  /* texto secundario */
+  --color-border-default: rgba(255,255,255,0.18);
+  --color-neutral-muted: rgba(148,163,184,0.35);
+  --color-accent-fg: #7dd3fc;                 /* links/acento */
+  --color-success-fg: #34d399;
+  --color-attention-fg: #fbbf24;
+  --color-danger-fg: #f87171;
 }
